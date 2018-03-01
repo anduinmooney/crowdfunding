@@ -1,0 +1,23 @@
+{ "projects": [{
+    "title": "Deadwood 1876",
+    "posterName": "Travis Hancock",
+    "description": "There’s gold in the Black Hills of South Dakota, and you’ve come to find (or steal) your share. You’re staying at one of the three major establishments in Deadwood where you and your associates are working together to steal some of the gold-filled safes floating around town. But you suspect that the “friends” you’re working with are secretly plotting to keep all the gold for themselves. Will you be ready to turn on them before they shoot you in the back?",
+    "goal": "250000",
+    "reward": "Pledge $25 or more to receive a signed copy of the game once released",
+    "id": "1"
+    }, {
+    "title": "The Kugali Anthology",
+    "posterName": "Kugali",
+    "description": "An anthology showcasing the best African stories. These stories pay homage to the past, embrace the present and imagine the future.",
+    "goal": "13982",
+    "reward": "Pledge $4 or more to receive a face mask",
+    "id": "2"
+      }, {
+    "title": "First to the Moon - Documentary on Apollo 8 | Round 2",
+    "posterName": "Paul Hildebrandt",
+    "description": "First to the Moon is a documentary film that tells the story of Apollo 8, the first mission that took humans beyond the earth in 1968.",
+    "goal": "50000",
+    "reward": "Pledge $10 or more to have your name in the credits",
+    "id": "3"
+  }]
+}
