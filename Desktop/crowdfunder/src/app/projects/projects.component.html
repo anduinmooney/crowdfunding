@@ -1,12 +1,23 @@
 <h2>Marketplace of Ideas</h2>
 
-<div *ngFor="let project of projects | async" class="panel panel-default">
+<div *ngFor="let project of projects | async | goal" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(project)"><em>{{project.title}}</em> by {{project.posterName}}</h3>
     <div *ngIf="currentRoute === '/admin'">
       {{project.description}}
       <hr>
       <app-edit-project [selectedProject]="project"></app-edit-project>
+      <hr>
+      <select>
+        <option value="allProjects">All Projects</option>
+        <option value="lowGoalProjects" selected="selected">Projects with low goals</option>
+        <option value="highGoalProjects">Projects with high goals</option>
+      </select>
+
+
+      <ul>
+        <li *ngFor="let currentProject of childProjectList | goal:filterByGoal">{{currentProject.name}}</li>
+      </ul>
     </div>
   </div>
 </div>

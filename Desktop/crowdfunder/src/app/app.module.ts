@@ -10,6 +10,9 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { EditProjectComponent } from './edit-project/edit-project.component';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { ProjectPipe } from './project.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,11 +28,14 @@ export const firebaseConfig = {
     ProjectsComponent,
     ProjectDetailComponent,
     AdminComponent,
-    EditProjectComponent
+    EditProjectComponent,
+    ProjectPipe
   ],
   imports: [
     BrowserModule,
     routing,
+    FormsModule,
+    HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule
   ],
